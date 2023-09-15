@@ -1,12 +1,8 @@
 import Mathlib.Data.ZMod.Basic
 
-/-Basics
-Tactics : cases, cases', right, left, simp, rw, apply, refine', solve_by_elim, conv, λ, rfl, repeat, change, congr, Classical.choose, suffices, exfalso, exact, ext, convert, fconstructor, use, by_cases
-Concepts : ZMod, MonoidHom, IsUnit, Units of ZMod, MulChar, sInf, noncomputable -/
-
 /- In this file, we shall discuss the basics of Lean 4. 
   This is a very quick crash course. To know more, please read Mathematics in Lean (link?) 
-  or Theorem Proving in Lean. -/
+  or Theorem Proving in Lean. You can also ask for help on the Zulip chat : https://leanprover.zulipchat.com/ -/
 
 -- Let us start with understanding what types are.
 -- Every element in Lean has a unique `Type`.  
@@ -40,6 +36,8 @@ Concepts : ZMod, MonoidHom, IsUnit, Units of ZMod, MulChar, sInf, noncomputable 
 -- The next line is another example :
 -- #check ∀ x, x = 0
 -- Can you construct some elements which have type `Prop`?
+
+#check ∃ n : ℕ, n = 1 
 
 -- Let us now understand functions.
 def fn1 (x : ℕ) : ℕ := x + 3
